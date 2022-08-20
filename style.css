@@ -1,0 +1,148 @@
+/* index css*/
+.intro-section{
+    background-color: #01aef2;
+    color: #ffffff;
+    text-align: center;
+    padding: 12em 0;
+}
+
+.intro-section header {
+    display: inline-block;
+    font-size: 20px;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    letter-spacing: 0.2em; 
+    line-height: 1em;
+}
+.intro-section section {
+    margin:40px;
+}
+
+.button-label{
+
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    padding:15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border:none;
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+.friend{
+    text-align: center;
+    font-family: sans-serif;
+    color: blueviolet;
+}
+
+.addthis_inline_share_toolbox{
+    text-align: center;
+}
+
+
+
+/* test 페이지 css*/
+
+.test-title{
+    background-color:#01aef2 ;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.test-title a{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    letter-spacing: 0.2em; 
+    line-height: 2.5em;
+    text-decoration: none;
+}
+
+.problem h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.problem p{
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+}
+
+.button-align{
+    text-align: center;
+}
+
+.problem span:hover{
+    color: #01aef2;
+}
+
+.result{
+    text-align: center;
+}
+
+.result-button{
+    background-color: #01aef2;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    padding:15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* result 페이지 css*/
+
+.result-title{
+    background-color: #01aef2;
+    color: #ffffff;
+    padding: 3em 0;
+    text-align: center;
+    margin:0;
+}
+
+.result-title a{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 20px;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    letter-spacing: 0.2em; 
+    line-height: 2.5em;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+.center p{
+    font-size: 15px;
+    color: grey;
+}
+
+.center input{
+    background-color: #01aef2;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    padding:15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border:none;
+    border-radius: 12px;
+    cursor:pointer;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>가족 돼지 테스트</title>
+</head>
+<body>
+    <header class="test-title">
+        <a href="index.html">가족 돼지 테스트</a>
+    </header>
+
+    <section>
+        <article class="problem">
+            <h2>야식</h2>
+            <p>야식을 먹는것을 좋아하고 자주 행한다.</p>
+            <div class="button-align">
+            <input type="radio" name="q1" class="yes-buttom"><span>Yes</span>
+            <input type="radio" name="q1" class="no-buttom"><span>No</span>
+            <input type="radio" name="q1" class="maybe-buttom"><span>Maybe</span>
+            </div>
+            <hr>
+        </article>
+
+        <article class="problem">
+            <h2>운동</h2>
+            <p>운동하거나 움직이는 것보다 집에서 가만히 쉬는 시간이 더 많다.</p>
+            <div class="button-align">
+            <input type="radio" name="q2" class="yes-buttom"><span>Yes</span>
+            <input type="radio" name="q2" class="no-buttom"><span>No</span>
+            <input type="radio" name="q2" class="maybe-buttom"><span>Maybe</span>
+            </div>
+            <hr>
+        </article>
+
+        <article class="problem">
+            <h2>간식</h2>
+            <p>끼니 외에도 간식을 자주 먹는다.</p>
+            <div class="button-align">
+            <input type="radio" name="q3" class="yes-buttom"><span>Yes</span>
+            <input type="radio" name="q3" class="no-buttom"><span>No</span>
+            <input type="radio" name="q3" class="maybe-buttom"><span>Maybe</span>
+            </div>
+            <hr>
+        </article>
+
+        <article class="problem">
+            <h2>술</h2>
+            <p>술을 좋아하고 자주 한다.</p>
+            <div class="button-align">
+            <input type="radio" name="q4" class="yes-buttom"><span>Yes</span>
+            <input type="radio" name="q4" class="no-buttom"><span>No</span>
+            <input type="radio" name="q4" class="maybe-buttom"><span>Maybe</span>
+            </div>
+            <hr>    
+        </article>
+
+        <article class="problem">
+            <h2>몸매</h2>
+            <p>자신의 키-110 하면 마이너스 값이 나온다</p>
+            <div class="button-align">
+            <input type="radio" name="q5" class="yes-buttom"><span>Yes</span>
+            <input type="radio" name="q5" class="no-buttom"><span>No</span>
+            <input type="radio" name="q5" class="maybe-buttom"><span>Maybe</span>
+            </div>
+            <hr>
+        </article>
+
+        <article class="problem">
+            <h2>연수는 돼지</h2>
+            <p>연수는 돼지라고 생각한다.</p>
+            <div class="button-align">
+            <input type="radio" name="q6" class="yes-buttom"><span>Yes</span>
+            <input type="radio" name="q6" class="no-buttom"><span>No</span>
+            <input type="radio" name="q6" class="maybe-buttom"><span>Maybe</span>
+            </div>
+            <hr>
+        </article>
+    </section>
+
+    <footer class="result">
+        <input type="button" class="result-button" value="결과보기" onclick="result();">    
+    </footer>
+
+    <script>
+        function result(){
+            var yes_count = 0;
+            var no_count = 0;
+            
+            var element = document.getElementsByClassName('yes-buttom');
+            for (var i=0; i < element.length; i++){
+                if (element[i].checked){
+                    yes_count++;
+                }
+            }
+            
+            element = document.getElementsByClassName('no-buttom');
+            for (var i=0; i < element.length; i++){
+                if (element[i].checked){
+                    no_count++;
+                }
+            }
+
+            element = document.getElementsByClassName('maybe-buttom');
+            for (let i=0; i < element.length; i++){
+                if (element[i].checked){
+                    yes_count++;
+                }
+            }
+        
+        if (yes_count+no_count != 6){
+            alert("선택안한 문제가 있습니다. 모든 문제에 답해주세요.");
+            return;
+        }   
+        
+        if(yes_count >= 4){
+            location.href="result1.html";
+        }
+        else if(yes_count == 3){
+            location.href="result2.html";
+        }
+        else if(yes_count == 2){
+            location.href="result3.html";
+        }
+        else{
+            location.href="result4.html";
+        }
+        }
+</script>
+</body>
+</html
+
+                }
